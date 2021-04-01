@@ -1,0 +1,118 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+h1,
+ul,
+a {
+  margin: 0;
+  text-decoration: none;
+}
+
+.container {
+  padding: 2rem 0;
+  height: 100%;
+}
+
+.heading {
+  text-align: center;
+}
+
+.heading h1 {
+  padding: 1rem 0 0.5rem 0;
+  font-size: 2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: -0.08rem;
+}
+
+.heading hr {
+  border: none;
+  width: 20%;
+  height: 3px;
+  margin: 0 auto;
+  background-color: black;
+}
+
+.heading p {
+  padding: 1.5rem 0 1rem 0;
+  width: 60%;
+  margin: 0 auto;
+  font-size: 0.8rem;
+}
+
+.heading button {
+  outline: none;
+  border: none;
+  border-radius: 50px;
+  background-color: black;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  margin: 1rem 0;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+}
+
+hr {
+  border: none;
+  width: 90%;
+  height: 3px;
+  background-color: black;
+  margin: 2rem auto;
+  border-radius: 50px;
+}
+
+.main-colors {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.main-colors .box {
+  border-radius: 8px;
+  padding: 0.75rem;
+  margin: 1rem 1.2rem;
+  background-color: whitesmoke;
+  -webkit-box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
+          box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.main-colors .box .color {
+  border-radius: 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  width: 200px;
+  height: 200px;
+}
+/*# sourceMappingURL=main.css.map */
