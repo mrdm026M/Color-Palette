@@ -31,21 +31,21 @@ function add_Color() {
     var new_Color = generate_Color();
     e.style.backgroundColor = new_Color;
     e.innerHTML = new_Color;
+
+    e.addEventListener("click", function () {
+      const text_Area = document.createElement("textarea");
+      const color = e.innerHTML;
+
+      if (!color) {
+        return;
+      }
+
+      text_Area.value = color;
+      document.body.appendChild(text_Area);
+      text_Area.select();
+      document.execCommand("copy");
+      text_Area.remove();
+      alert("Color " + color.toUpperCase() + " copied to clipboard");
+    });
   });
 }
-
-document.querySelector(".color").addEventListener("click", function () {
-  const text_Area = document.createElement("textarea");
-  const color = document.querySelector(".color").innerHTML;
-
-  if (!color) {
-    return;
-  }
-
-  text_Area.value = color;
-  document.body.appendChild(text_Area);
-  text_Area.select();
-  document.execCommand("copy");
-  text_Area.remove();
-  alert("Color copied to clipboard");
-});
