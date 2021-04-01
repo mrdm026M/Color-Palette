@@ -24,6 +24,7 @@ function generate_Color() {
   }
   return "#" + color;
 }
+
 function add_Color() {
   color_block.forEach((e) => {
     console.log(color_block);
@@ -32,3 +33,19 @@ function add_Color() {
     e.innerHTML = new_Color;
   });
 }
+
+document.querySelector(".color").addEventListener("click", function () {
+  const text_Area = document.createElement("textarea");
+  const color = document.querySelector(".color").innerHTML;
+
+  if (!color) {
+    return;
+  }
+
+  text_Area.value = color;
+  document.body.appendChild(text_Area);
+  text_Area.select();
+  document.execCommand("copy");
+  text_Area.remove();
+  alert("Color copied to clipboard");
+});
